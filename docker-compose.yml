@@ -11,6 +11,12 @@ services:
       - NODE_ENV=production
     ports:
       - "3000:3000"
+    # 🚀 TRUCO DE DESARROLLO: Fuerza el modo desarrollo y conecta tus archivos locales
+    command: npm run dev
+    volumes:
+      - .:/app
+      - /app/node_modules
+      - /app/.next
 
   # Contenedor 2: El servidor Nginx
   nginx:
