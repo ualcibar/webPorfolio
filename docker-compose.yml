@@ -8,6 +8,21 @@ services:
     environment:
       - NODE_ENV=production
 
+  nextjs_app_dev:
+    profiles: ["dev"]
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: dev
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - .:/app
+      - /app/node_modules
+      - /app/.next
+    ports:
+      - "3000:3000"
+      
   # Contenedor 2: El servidor Nginx (único punto de acceso externo)
   nginx:
     image: nginx:alpine

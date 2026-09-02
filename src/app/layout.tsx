@@ -1,5 +1,5 @@
-//import { ReactNode } from 'react';
-//import './ui/global.css';
+import { ReactNode } from 'react';
+import './ui/global.css';
  
 export default function RootLayout({
   children,

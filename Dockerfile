@@ -17,6 +17,17 @@ COPY package*.json ./
 RUN npm install --no-audit --no-fund
 
 # ==========================================
+# ETAPA DEV: Servidor de desarrollo con hot reload
+# ==========================================
+FROM base AS dev
+WORKDIR /app
+COPY --from=deps /app/node_modules ./node_modules
+COPY . .
+ENV NEXT_TELEMETRY_DISABLED=1
+EXPOSE 3000
+CMD ["npm", "run", "dev"]
+
+# ==========================================
 # ETAPA 3: Compilacion de la app (builder)
 # ==========================================
 FROM base AS builder
