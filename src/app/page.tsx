@@ -4,6 +4,9 @@ export default function Home() {
       <div style={{ textAlign: 'center', padding: '40px', background: 'white', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}>
         <h1>¡Hola desde Next.js + Nginx + Docker!🚀</h1>
         <p>Todo está funcionando perfectamente en tu entorno local.</p>
+        <h1 className="text-4xl font-bold text-blue-600 underline">
+          ¡Hola desde Next.js + Nginx + Dodsadasds
+        </h1>
       </div>
     </div>
   );
