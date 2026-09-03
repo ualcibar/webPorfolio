@@ -1,1 +1,25 @@
 @import "tailwindcss";
+
+@theme {
+  /* Opción 1 — Casi blanco cálido */
+  --color-photo1-bg: #FFF8F0;
+  --color-photo1-surface: #FBEEDD;
+  --color-photo1-text: #2E2418;
+  --color-photo1-accent: #B5702E;
+  
+  /* Opción 2 — Blanco roto */
+  /*
+  --color-photo1-bg: #FDFAF6;
+  --color-photo1-surface: #F5EBDE;
+  --color-photo1-text: #2B2621;
+  --color-photo1-accent: #A9683A;
+  */
+  
+  /* Opción 3 — Blanco con eco de crema */
+  /*
+  --color-photo1-bg: #FEFCFA;
+  --color-photo1-surface: #F7EEE2;
+  --color-photo1-text: #26221E;
+  --color-photo1-accent: #9E6B3F;
+  */
+}
