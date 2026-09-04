@@ -23,3 +23,7 @@
   --color-photo1-accent: #9E6B3F;
   */
 }
+
+body {
+  font-family: var(--font-adventor), sans-serif;
+}
