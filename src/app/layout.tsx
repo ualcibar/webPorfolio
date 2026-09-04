@@ -1,6 +1,7 @@
 import { ReactNode } from 'react';
 import './ui/global.css';
 import localFont from 'next/font/local';
+import Navbar from '@/components/Navbar';
 
 const adventor = localFont({
   src: [
@@ -19,7 +20,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={adventor.variable}>
-      <body>{children}</body>
+      <body>
+        <Navbar/>
+        {children}
+      </body>
     </html>
   );
 }
