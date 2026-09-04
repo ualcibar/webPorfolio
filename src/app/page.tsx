@@ -27,6 +27,11 @@ export default function Home() {
         </select>
       </div>
     </nav>
+
+    {/*Empieza el body*/}
+    <div className="h-full">
+      <img className="aspect-3/2 object-cover" src="/img/DSCF7911.jpg" />
+    </div>
   </div>
   );
 }
