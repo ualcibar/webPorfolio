@@ -19,8 +19,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={adventor.variable}>
-      <body>
+    <html lang="en">
+      <body className={`${adventor.variable} h-dvh flex flex-col`}> 
         <Navbar/>
         {children}
       </body>
