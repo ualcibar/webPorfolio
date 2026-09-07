@@ -2,6 +2,7 @@ import { ReactNode } from 'react';
 import './ui/global.css';
 import localFont from 'next/font/local';
 import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 
 const adventor = localFont({
   src: [
@@ -23,7 +24,7 @@ export default function RootLayout({
       <body className={`${adventor.variable} h-dvh flex flex-col`}> 
         <Navbar/>
         {children}
-
+        <Footer/>
       </body>
     </html>
   );
