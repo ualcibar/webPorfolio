@@ -1,5 +1,6 @@
 import LanguageSelector from '@/components/LanguageSelector';
 import Menu from '@/components/Menu';
+import Link from 'next/link';
 
 export default function Navbar() {
   return (
@@ -7,7 +8,9 @@ export default function Navbar() {
       <Menu />
       
       <div className="h-full flex items-center justify-center text-center">
-        <span className="font-bold text-xl">Unai Alcibar-Arechuluaga Blanco</span>
+        <Link href="/">
+          <span className="font-bold text-xl">Unai Alcibar-Arechuluaga Blanco</span>
+        </Link>
       </div>
 
       <LanguageSelector />
