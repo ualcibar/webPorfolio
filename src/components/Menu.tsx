@@ -37,17 +37,17 @@ export default function Menu() {
             transition={{ duration: 0.3 }}
             className="fixed top-0 left-0 w-[20vw] h-dvh bg-transparent"
           >
-            <nav className="flex flex-col gap-7 p-8 pl-20 pt-30">
-              <Link href="/proyectos" onClick={() => setIsOpen(false)} className="text-lg hover:opacity-70">
+            <nav className="flex flex-col gap-7 p-8 pl-15 pt-35 text-2xl">
+              <Link href="/proyects" onClick={() => setIsOpen(false)} className="hover:opacity-70">
                 Proyectos
               </Link>
-              <Link href="/" onClick={() => setIsOpen(false)} className="text-lg hover:opacity-70">
+              <Link href="/" onClick={() => setIsOpen(false)} className="hover:opacity-70">
                 Diario
               </Link>
-              <Link href="/" onClick={() => setIsOpen(false)} className="text-lg hover:opacity-70">
+              <Link href="/" onClick={() => setIsOpen(false)} className="hover:opacity-70">
                 Sobre mi
               </Link>
-              <Link href="/" onClick={() => setIsOpen(false)} className="text-lg hover:opacity-70">
+              <Link href="/" onClick={() => setIsOpen(false)} className="hover:opacity-70">
                 Contacto
               </Link>
             </nav>

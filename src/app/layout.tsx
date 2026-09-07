@@ -23,6 +23,7 @@ export default function RootLayout({
       <body className={`${adventor.variable} h-dvh flex flex-col`}> 
         <Navbar/>
         {children}
+
       </body>
     </html>
   );
