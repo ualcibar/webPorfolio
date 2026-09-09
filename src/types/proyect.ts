@@ -1,7 +1,7 @@
 import type { Photo } from '@/types/photo';
 
 export type Proyect = {
-  tilte: string;
+  title: string;
   description: string;
   date: Date;
   photos: Photo[];

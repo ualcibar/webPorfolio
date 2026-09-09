@@ -35,30 +35,30 @@ const v0023687: Photo = {
   date: new Date('2024-04-12'),
 };
 
-export const proyectos: Proyects = [
+export const proyects: Proyects = [
   {
-    tilte: 'Proyecto Uno',
+    title: 'Proyecto Uno',
     description: 'Descripción del proyecto uno.',
     date: new Date('2024-03-15'),
     photos: [dscf7911, v0023484, v0023684, v0023687],
     cover: 0, // portada: dscf7911
   },
   {
-    tilte: 'Proyecto Dos',
+    title: 'Proyecto Dos',
     description: 'Descripción del proyecto dos.',
     date: new Date('2024-04-02'),
     photos: [dscf7911, v0023484, v0023684, v0023687],
     cover: 1, // portada: v0023484
   },
   {
-    tilte: 'Proyecto Tres',
+    title: 'Proyecto Tres',
     description: 'Descripción del proyecto tres.',
     date: new Date('2024-04-10'),
     photos: [dscf7911, v0023484, v0023684, v0023687],
     cover: 2, // portada: v0023684
   },
   {
-    tilte: 'Proyecto Cuatro',
+    title: 'Proyecto Cuatro',
     description: 'Descripción del proyecto cuatro.',
     date: new Date('2024-04-12'),
     photos: [dscf7911, v0023484, v0023684, v0023687],

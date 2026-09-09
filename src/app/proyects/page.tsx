@@ -1,17 +1,16 @@
-//import { proyectos } from '@/data/proyectos';
-//import ProyectoCard from '@/components/ProyectoCard';
+import { proyects } from '@/data/proyects';
+import Link from 'next/link';
+import ProyectoCover from '@/components/ProyectCover';
 
 
 export default function ProyectsPage() {
   return (
       <div className ="bg-photo1-bg h-full flex flex-col items-center justify-center gap-4">
-        <div className="inline-grid grid-cols-3 gap-4 h-170 w-250 mb-12 pb-10">
-            <div className="bg-white" >01</div>
-            <div className="bg-white">02</div>
-            <div className="bg-white">03</div>
-            <div className="bg-white">04</div>
-            <div className="bg-white">05</div>
-            <div className="bg-white">06</div>
+        <div className="inline-grid items-center grid-cols-3 gap-4 h-170 w-260 ml-30 mb-12 pb-10">
+            <ProyectoCover proyect={proyects[0]}/>
+            <ProyectoCover proyect={proyects[2]}/>
+            <ProyectoCover proyect={proyects[3]}/>
+            <ProyectoCover proyect={proyects[1]}/>
         </div>
       </div>
   );
