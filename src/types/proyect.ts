@@ -7,3 +7,5 @@ export type Proyect = {
   photos: Photo[];
   cover: number;
 };
+
+export type Proyects = Proyect[];
