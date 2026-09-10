@@ -2,6 +2,7 @@ import type { Photo } from '@/types/photo';
 
 export type Proyect = {
   title: string;
+  url_name: string;
   description: string;
   date: Date;
   photos: Photo[];

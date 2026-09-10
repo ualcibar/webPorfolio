@@ -1,16 +1,15 @@
-import { proyects } from '@/data/proyects';
-import { proyect } from '@/data/proyects';
+import type { Proyect } from '@/types/proyect';
 import Link from 'next/link';
 
 
-interface ProyectoCoverProps {
+interface ProyectCoverProps {
   proyect: Proyect;
 }
 
-export default function ProyectCover({ proyect }: ProyectoCoverProps) {
+export default function ProyectCover({ proyect }: ProyectCoverProps) {
   return (
     <Link 
-        href={`/proyectos/${proyect.title}`} className="bg-white bg-white h-70 w-full overflow-hidden relative" >
+        href={`/proyects/${proyect.url_name}`} className="bg-white bg-white h-70 w-full overflow-hidden relative" >
         <img 
             className="max-w-full p-4"
             src= {`${proyect.photos[proyect.cover].src}`}

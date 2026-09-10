@@ -38,6 +38,7 @@ const v0023687: Photo = {
 export const proyects: Proyects = [
   {
     title: 'Proyecto Uno',
+    url_name: 'proyecto_uno',
     description: 'Descripción del proyecto uno.',
     date: new Date('2024-03-15'),
     photos: [dscf7911, v0023484, v0023684, v0023687],
@@ -45,6 +46,7 @@ export const proyects: Proyects = [
   },
   {
     title: 'Proyecto Dos',
+    url_name: 'proyecto_dos',
     description: 'Descripción del proyecto dos.',
     date: new Date('2024-04-02'),
     photos: [dscf7911, v0023484, v0023684, v0023687],
@@ -52,16 +54,18 @@ export const proyects: Proyects = [
   },
   {
     title: 'Proyecto Tres',
+    url_name: 'proyecto_tres',
     description: 'Descripción del proyecto tres.',
     date: new Date('2024-04-10'),
     photos: [dscf7911, v0023484, v0023684, v0023687],
-    cover: 2, // portada: v0023684
+    cover: 3, // portada: v0023684
   },
   {
     title: 'Proyecto Cuatro',
+    url_name: 'proyecto_cuatro',
     description: 'Descripción del proyecto cuatro.',
     date: new Date('2024-04-12'),
-    photos: [dscf7911, v0023484, v0023684, v0023687],
+    photos: [dscf7911, v0023484, v0023687, v0023684],
     cover: 3, // portada: v0023687
   },
 ];

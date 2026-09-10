@@ -1,5 +1,4 @@
 import { proyects } from '@/data/proyects';
-import Link from 'next/link';
 import ProyectoCover from '@/components/ProyectCover';
 
 
