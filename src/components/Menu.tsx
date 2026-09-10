@@ -41,9 +41,11 @@ export default function Menu() {
               <Link href="/proyects" onClick={() => setIsOpen(false)} className="hover:opacity-70">
                 Proyectos
               </Link>
+              {/* 
               <Link href="/" onClick={() => setIsOpen(false)} className="hover:opacity-70">
                 Diario
               </Link>
+              */}
               <Link href="/" onClick={() => setIsOpen(false)} className="hover:opacity-70">
                 Sobre mi
               </Link>
