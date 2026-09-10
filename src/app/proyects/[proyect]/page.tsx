@@ -1,36 +1,39 @@
 
+//'use client';
+//import { useState } from 'react';
+
 import Link from 'next/link';
 import { proyects } from '@/data/proyects';
+import { redirect } from 'next/navigation';
+import PhotoGalery from '@/components/PhotoGalery';
 
-import { notFound } from 'next/navigation';
 
 type ProyectPageProps = {
   params: Promise<{ url_name: string }>;
 };
 
 export default async function ProyectPage({ params }: ProyectPageProps) {
-  console.log('param recibido:', params);
-  const paramsResueltos = await params;
-  const url_name: string = paramsResueltos.proyect;
-  console.log('url recibido:', url_name);
-  const proyecto = proyects.find((p) => p.url_name === url_name);
-  console.log('proyecto encontrado:', proyecto);
-
-  if (!proyecto) {
-    notFound();
+  const arg = await params;
+  const proyect = proyects.find((p) => p.url_name === arg.proyect);
+  
+  //const [fotoActual, setFotoActual] = useState(0);
+  
+  //const siguiente = () => setFotoActual(fotoActual + 1);
+  //const anterior = () => setFotoActual(fotoActual - 1);
+  if (!proyect) {
+    redirect('/proyects');
   }
   return (
     <div className="bg-photo1-bg h-full flex flex-col items-center justify-center gap-4 p-4">
       <div className="grid grid-cols-[25rem_1fr] gap-4 w-275 h-152 ml-45 mb-12 pb-10">
-        <div className="bg-white h-full">
-          <div className="p-8">
-            1
-            <h1 className="text-3xl font-bold">{proyecto.title}</h1>
-            <p>{proyecto.description}</p>
+        <div className="h-full">
+          <div className="p-8 p-r4">
+            <h1 className="text-3xl font-bold pb-6">{proyect.title}</h1>
+            <p>{proyect.description}</p>
             
           </div>
         </div>
-        <div className="bg-white h-full">2</div>
+        <PhotoGalery proyect={proyect}/>
       </div>
     </div>
   );
