@@ -1,4 +1,3 @@
-
 export default function Home() {
   return (
     <div className="bg-photo1-bg h-full flex flex-col items-center justify-center gap-4 p-4">

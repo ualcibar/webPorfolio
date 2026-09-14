@@ -1,7 +1,3 @@
-
-//'use client';
-//import { useState } from 'react';
-
 import Link from 'next/link';
 import { proyects } from '@/data/proyects';
 import { redirect } from 'next/navigation';
@@ -16,10 +12,6 @@ export default async function ProyectPage({ params }: ProyectPageProps) {
   const arg = await params;
   const proyect = proyects.find((p) => p.url_name === arg.proyect);
   
-  //const [fotoActual, setFotoActual] = useState(0);
-  
-  //const siguiente = () => setFotoActual(fotoActual + 1);
-  //const anterior = () => setFotoActual(fotoActual - 1);
   if (!proyect) {
     redirect('/proyects');
   }
