@@ -4,7 +4,7 @@ export default function LanguageSelector() {
   const getLanguagePath = (locale: string) => '#';
   return (
 
-  <div className="h-full flex items-center justify-end px-16 text-base font-medium text-gray-700">
+  <div className="h-full flex items-center justify-end px-3 sm:px-8 md:px-16 text-xs sm:text-sm md:text-base font-medium text-gray-700">
       <Link 
         href={getLanguagePath('es')} 
         className="hover:text-grey-700 transition-colors uppercase"

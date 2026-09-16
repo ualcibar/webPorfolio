@@ -9,11 +9,11 @@ export default function Menu() {
 
   return (
     <div>
-      <div className="h-full flex items-center pl-12">
-        <button 
-          type="button" 
+      <div className="h-full flex items-center pl-4 sm:pl-8 md:pl-12">
+        <button
+          type="button"
           onClick={() => setIsOpen(!isOpen)}
-          className="relative z-50 flex items-center text-4xl hover:opacity-80 transition-opacity cursor-pointer"
+          className="relative z-50 flex items-center text-2xl sm:text-3xl md:text-4xl hover:opacity-80 transition-opacity cursor-pointer"
           aria-label="Toggle menu">
           <AnimatePresence mode="wait" initial={false}>
           <motion.span
@@ -35,9 +35,9 @@ export default function Menu() {
             animate={{ x: 0 }}
             exit={{ x: '-100%' }}
             transition={{ duration: 0.3 }}
-            className="fixed top-0 left-0 w-[20vw] h-dvh bg-transparent"
-          >   
-            <nav className="flex flex-col gap-7 p-8 pl-15 pt-35 text-2xl">
+            className="fixed top-0 left-0 w-3/4 max-w-xs sm:max-w-sm md:w-[20vw] h-dvh bg-photo1-bg sm:bg-transparent"
+          >
+            <nav className="flex flex-col gap-5 sm:gap-7 p-6 pl-8 pt-24 text-xl sm:p-8 sm:pl-12 sm:pt-32 sm:text-2xl md:pl-15 md:pt-35">
               <Link href="/proyects" onClick={() => setIsOpen(false)} className="hover:opacity-70">
                 Proyectos
               </Link>
