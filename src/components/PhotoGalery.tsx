@@ -27,16 +27,18 @@ export default function PhotoGalery({ proyect }: ProyectCoverProps) {
     }
   };
   return (
-    <div className="bg-white h-full">        
-        <img 
-            className="max-w-full p-4"
+    <div className="bg-white h-full">
+      <div className="relative">
+        <img
+            className="max-w-full w-full h-auto p-4"
             src= {`${proyect.photos[fotoActual].src}`}
         />
-    <span className="absolute pl-157 pt-12">{fotoActual + 1}</span>
-<div className="relative flex items-center text-2xl justify-center gap-4 w-full mt-7 p-4">
-    <button type="button" onClick={anterior}>&lt;</button>
-    <button type="button" onClick={siguiente}>&gt;</button>
-  </div>
+        <span className="absolute top-2 right-2 sm:top-4 sm:right-4 bg-white/80 px-2 py-1 text-sm sm:text-base">{fotoActual + 1}</span>
+      </div>
+      <div className="flex items-center text-xl sm:text-2xl justify-center gap-4 w-full mt-4 sm:mt-7 p-4">
+        <button type="button" onClick={anterior}>&lt;</button>
+        <button type="button" onClick={siguiente}>&gt;</button>
+      </div>
     </div>
   );
 }
